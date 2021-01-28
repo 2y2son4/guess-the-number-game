@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel='icon' href="./images/favicon.png" type='image/x-icon' />
-    <link rel="stylesheet" href="./styles/main.css" />
-    <title>Document</title>
-</head>
-<body class="main">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="./images/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="./styles/main.css" />
+		<title>Modulo 2 - Evaluación intermedia</title>
+	</head>
+	<body class="body">
+		<div class="main">
+			<h1 class="title">¡Adivina el número!</h1>
 
-    <h1 class="title">¡Adivina el número!</h1>
+			<label for="guessNumber" class="label">Introduce aquí tu número:</label>
+			<input id="guessNumber" type="number" class="js-input-number input" />
+			<button class="js-btn btn">Prueba</button>
 
-    <label for="guessNumber" class="label">Introduce aquí tu número:</label>
-    <input id="guessNumber" type="number" class="js-input-number input">
-    <button class="js-btn btn">
-        Prueba
-    </button>
+			<p class="paragraph js-paragraph1">Pista: escribe un número del 1 al 100 y dale a "Prueba".</p>
+			<p class="paragraph js-paragraph2">Número de intentos:</p>
+		</div>
 
-    <p class="paragraph js-paragraph1">Pista: escribe un número del 1 al 100 y dale a "Prueba".</p>
-    <p class="paragraph js-paragraph2">Número de intentos:</p>
-    
-    
-    <script src="./scripts/main.js"></script>
-</body>
+		<script src="./scripts/main.js"></script>
+	</body>
 </html>
