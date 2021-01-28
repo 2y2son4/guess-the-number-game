@@ -28,7 +28,14 @@
 }
 
 .title {
-    color: #F5990D;    
+    color: #F5990D;
+    font-family: 'Imbue', serif;
+    font-size: 48px;
+}
+
+.label {
+    font-size: 18px;
+    font-weight: bold;
 }
 .input {
     width: 40%;
