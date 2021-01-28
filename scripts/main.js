@@ -1,12 +1,12 @@
 "use strict";
 
 const inputElement = document.querySelector(".js-input-number");
-const paragraph1Element = document.querySelector(".js-paragraph1");
-const paragraph2Element = document.querySelector(".js-paragraph2");
+const clueElement = document.querySelector(".js-clue");
+const clicksElement = document.querySelector(".js-clicks");
 const btnElement = document.querySelector(".js-btn");
 
-function paragraph1Clue(clue) {
-	return (paragraph1Element.innerHTML = clue);
+function paragraphClue(clue) {
+	return clueElement.innerHTML = clue;
 }
 
 function getRandomNumber(max) {
@@ -21,15 +21,15 @@ function btnHandler() {
 	const inputValue = parseInt(inputElement.value);
     
 	if (inputValue < randomNumber && inputValue > 0) {
-		paragraph1Clue("El número es demasiado bajo.");
+		paragraphClue("El número es demasiado bajo.");
 	} else if (inputValue > randomNumber && inputValue <= 100) {
-		paragraph1Clue("El número es demasiado alto.");
+		paragraphClue("El número es demasiado alto.");
 	} else if (inputValue === 42 && randomNumber === 42) {
-        paragraph1Clue("¡¡Has ganado, campeona!! Y tienes la respuesta para todo.");
+        paragraphClue("¡¡Has ganado, campeona!! Y tienes la respuesta para todo.");
     } else if (inputValue === randomNumber) {
-		paragraph1Clue("¡¡Has ganado, campeona!! 🤡");
+		paragraphClue("¡¡Has ganado, campeona!! 🤡");
 	} else {
-		paragraph1Clue("El número debe estar entre 1 y 100.");
+		paragraphClue("El número debe estar entre 1 y 100.");
 	}
 }
 
@@ -37,7 +37,7 @@ btnElement.addEventListener("click", btnHandler);
 
 let clicksCount = 0;
 function attemptHandler() {
-	return (paragraph2Element.innerHTML = `Número de intentos: ${clicksCount++}`);
+	return (clicksElement.innerHTML = `Número de intentos: ${clicksCount++}`);
 }
 
 btnElement.addEventListener("click", attemptHandler);
