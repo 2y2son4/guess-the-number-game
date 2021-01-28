@@ -35,7 +35,7 @@ function btnHandler() {
 
 btnElement.addEventListener("click", btnHandler);
 
-let clicksCount = 0;
+let clicksCount = 1;
 function attemptHandler() {
 	return (clicksElement.innerHTML = `Número de intentos: ${clicksCount++}`);
 }
