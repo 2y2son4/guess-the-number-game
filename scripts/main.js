@@ -6,14 +6,14 @@ const paragraph2Element = document.querySelector('.js-paragraph2');
 const btnElement = document.querySelector('.js-btn');
 
 
-function getRandomNumber(max) {
-	return Math.ceil(Math.random() * max);
-}
-
 
 
 function paragraph1Clue(clue) {
     return paragraph1Element.innerHTML = clue;
+}
+
+function getRandomNumber(max) {
+	return Math.ceil(Math.random() * max);
 }
 
 const randomNumber = getRandomNumber(100);
