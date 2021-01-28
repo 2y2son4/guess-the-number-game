@@ -18,6 +18,8 @@ function getRandomNumber(max) {
 
 const randomNumber = getRandomNumber(100);
 
+console.log(randomNumber);
+
 function btnHandler () {
     const inputValue = parseInt(inputElement.value);
 
@@ -34,9 +36,9 @@ function btnHandler () {
 
 btnElement.addEventListener('click', btnHandler);
 
-
+let clicksCount = 0; 
 function attemptHandler () {    
-    let clicksCount = 0;   
+      
     return paragraph2Element.innerHTML = `Número de intentos: ${clicksCount++}`;
 }
 
