@@ -53,4 +53,8 @@
 .btn:active {
     background-color: #C40309;
     border: 2px #C40309 solid;
+}
+
+strong {
+    margin: 0;
 }*/
