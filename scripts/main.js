@@ -19,12 +19,14 @@ console.log(randomNumber);
 
 function btnHandler() {
 	const inputValue = parseInt(inputElement.value);
-
+    
 	if (inputValue < randomNumber && inputValue > 0) {
 		paragraph1Clue("El número es demasiado bajo.");
 	} else if (inputValue > randomNumber && inputValue <= 100) {
 		paragraph1Clue("El número es demasiado alto.");
-	} else if (inputValue === randomNumber) {
+	} else if (inputValue === 42 && randomNumber === 42) {
+        paragraph1Clue("¡¡Has ganado, campeona!! Y tienes la respuesta para todo.");
+    } else if (inputValue === randomNumber) {
 		paragraph1Clue("¡¡Has ganado, campeona!! 🤡");
 	} else {
 		paragraph1Clue("El número debe estar entre 1 y 100.");
