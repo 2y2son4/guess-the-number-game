@@ -23,9 +23,9 @@ console.log(randomNumber);
 function btnHandler () {
     const inputValue = parseInt(inputElement.value);
 
-    if (inputValue < randomNumber) {
+    if (inputValue < randomNumber && inputValue > 0) {
         paragraph1Clue('El número es demasiado bajo.');
-    } else if (inputValue > randomNumber) {
+    } else if (inputValue > randomNumber && inputValue < 100) {
         paragraph1Clue('El número es demasiado alto.');
     } else if (inputValue === randomNumber) {
         paragraph1Clue('¡¡Has ganado, campeona!!');
