@@ -35,6 +35,7 @@ function btnHandler() {
     paragraphClue('¡¡Has ganado, campeona!! Y tienes la respuesta para todo.');
   } else if (inputValue === randomNumber) {
     paragraphClue('¡¡Has ganado, campeona!! 🤡');
+    tryBtnElement.classList.toggle('hidden');
   } else {
     paragraphClue('El número debe estar entre 1 y 100.');
   }
@@ -56,6 +57,7 @@ function resetHandler() {
   clicksCount = 1;
   clueElement.innerHTML =
     '<strong class="bold">Pista:</strong> escribe un número del 1 al 100 y haz click en "Prueba".';
+  tryBtnElement.classList.remove('hidden');
   randomNumber = getRandomNumber(100);
   console.log(randomNumber);
 }
