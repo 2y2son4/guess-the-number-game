@@ -28,16 +28,17 @@ function btnHandler() {
   const inputValue = Number(inputElement.value); // Better than parseInt, it converts, i.e. '1e2' → 100.
 
   if (inputValue < randomNumber && inputValue > 0) {
-    paragraphClue('El número es demasiado bajo.');
+    paragraphClue('El número tiene que ser más alto ⬆️');
   } else if (inputValue > randomNumber && inputValue <= 100) {
-    paragraphClue('El número es demasiado alto.');
+    paragraphClue('El número tiene que ser más bajo ⬇️');
   } else if (inputValue === 42 && randomNumber === 42) {
-    paragraphClue('¡¡Has ganado, campeona!! Y tienes la respuesta para todo.');
+    paragraphClue('¡¡Has ganado, campeona!! 4️⃣2️⃣ Y tienes la respuesta para todo 💫');
+    tryBtnElement.classList.toggle('hidden');
   } else if (inputValue === randomNumber) {
-    paragraphClue('¡¡Has ganado, campeona!! 🤡');
+    paragraphClue('🎉 ¡¡Has ganado, campeona!! 🎉');
     tryBtnElement.classList.toggle('hidden');
   } else {
-    paragraphClue('El número debe estar entre 1 y 100.');
+    paragraphClue('El número debe estar entre 1️⃣ y 1️⃣0️⃣0️⃣.');
   }
 }
 
